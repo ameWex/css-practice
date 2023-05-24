@@ -1,14 +1,4 @@
-<header class="header">
-    <div>
-        {{> logo}}
-    </div>
-
-    <nav class="header_nav">
-        <div class="header_nav_right">
-            {{> nav list=header}}
-        </div>
-    </nav>
-</header>
+{{> header}}
 
 {{#with main}}
 <main class="main">
@@ -41,16 +31,4 @@
     {{/each}}
 </div>
 
-<footer class="footer">
-    <div>
-        {{> logo}}
-        <span class="copyright">Copyright 2023-2024</span>
-    </div>
-
-    {{#each footer}}
-    <div>
-        <span class="footer_title">{{title}}</span>
-        {{> nav list=links isVertical=true}}
-    </div>
-    {{/each}}
-</footer>
+{{> footer}}
