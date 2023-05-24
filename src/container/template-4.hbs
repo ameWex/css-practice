@@ -11,21 +11,15 @@
 </header>
 
 {{#with main}}
-<div class="main">
+<main class="main">
     <img src="{{image}}" alt="photo" class="main_image">
     <div class="main_content">
         <h1 class="main_title">{{heading}}</h1>
         <p class="main_description">{{descriotion}}</p>
         <a href="{{href}}" class="main_button">{{button}}</a>
     </div>
-</div>
-{{/with}}
-
-<main class="blog">
-    {{#each blog}}
-    {{> cardBlog data=this}}
-    {{/each}}
 </main>
+{{/with}}
 
 <div class="featured">
     {{#each featured}}
@@ -38,7 +32,16 @@
     {{/each}}
 </div>
 
-<footer class="footer row">
+<div class="actions">
+    {{#each actions}}
+    <div class="actions_cards">
+        <div class="actions_heading">{{heading}}</div>
+        <a href="{{url}}" class="actions_button">{{text}}</a>
+    </div>
+    {{/each}}
+</div>
+
+<footer class="footer">
     <div>
         {{> logo}}
         <span class="copyright">Copyright 2023-2024</span>
