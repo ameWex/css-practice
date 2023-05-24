@@ -1,0 +1,249 @@
+:root {
+    --space-m: 12px;
+    --space-l: 24px;
+
+    --color-border:  #dee2e6; 
+    --color-white: #fff;
+    --color-primary: rgb(32, 32, 206);
+    --color-d: #5a5a5a;
+    --color-title: #212529;
+    --color-text: #343a40;
+
+    --border-radius: 12px;
+
+    --weight-title: 500;
+    --weight-text: 400;
+}
+
+/* ========================== */
+
+.page {
+    background: var(--color-white);
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.page_content {
+    max-width: 960px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 80px;
+}
+
+/* ========================== */
+
+.header {
+    padding: var(--space-l) 0;
+    border-bottom: 1px solid var(--color-border);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 17px;
+
+    background:var(--color-primary);
+    color: var(--color-white);
+
+    height: 24px;
+    width: 24px;
+
+    border-radius: calc(var(--border-radius)/ 2 );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav_link {
+    color: var(--color-text);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+    color: var(--color-primary)
+}
+
+.nav_inline {
+    gap: var(--space-l);
+}
+
+.nav_vertical {
+    gap: var(--space-m);
+    flex-direction: column;
+}
+
+.footer {
+    padding: var(--space-l) 0;
+
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.copyright {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight:  var(--weight-text);
+    font-size: 12.8px;
+    line-height: 15px;
+    color: var(--color-text);
+
+    display: block;
+
+    margin-top: var(--space-m);
+}
+
+.footer_title {
+    font-size: 20px;
+    color: var(--color-title);
+
+    display: block;
+
+    margin-bottom: var(--space-m);
+
+    font-weight: var(--weight-title);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.main_image {
+    width: 500px;
+    height: 500px;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-l);
+    justify-content: center;
+}
+
+.main_title {
+    font-size: 36px;
+    color: var(--color-title);
+    font-weight: var(--weight-title);
+    line-height: 120%;
+}
+
+.main_text {
+    font-size: 16px;
+    line-height: 170%;
+    color: var(--color-text);
+}
+
+.main_button {
+    box-sizing: border-box;
+    width: 119px;
+    padding: 12px 16px;
+    background: #6C757D;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.featured {
+    display: flex;
+    gap: 36px;
+    padding: 40px;
+    border-bottom: 1px solid var(--color-border);
+    justify-content: space-between;
+}
+
+.featured_content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-l);
+}
+
+.featured_image {
+    height: 64px;
+    width: 64px;
+    border-radius: 12px;
+}
+
+.featured_title {
+    font-size: 32px;
+    font-weight: var(--weight-title);
+    color: var(--color-title);
+}
+
+.featured_info {
+    font-weight:  var(--weight-text);
+    font-size: 16px;
+    color: var(--color-text);
+    line-height: 170%;
+}
+
+.button {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: var(--border-radius);
+}
+
+.featured_button {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.featured_button:hover {
+    opacity: 0.8;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-primary);
+    padding: var(--space-l);
+    border-radius: var(--border-radius);
+}
+
+.form_content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-m);
+}
+
+.form_title {
+    font-size: 27px;
+    color: var(--color-white);
+    font-weight: var(--weight-title);
+}
+
+.form_info {
+    font-size: 16px;
+    font-weight: var(--weight-text);
+    color: var(--color-white);
+}
+
+.form_button {
+    width: 100%;
+    background-color: var(--color-white);
+    max-width: 160px;
+    color: var(--color-text);
+}
