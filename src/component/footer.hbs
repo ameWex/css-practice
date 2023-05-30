@@ -1,13 +1,13 @@
-<footer class="block_content footer">
-    {{#with footer}}
-    <div class="footer_pages">
-        {{#each pages}}
-        <a href="{{path}}" class="footer_title">{{name}}</a>
-        {{/each}}
+<footer class="footer">
+    <div>
+        {{> logo}}
+        <span class="copyright">Copyright 2023-2024</span>
     </div>
 
+    {{#each footer}}
     <div>
-        <span class="copyright">{{copyright}}</span>
+        <span class="footer_title">{{title}}</span>
+        {{> nav list=links isVertical=true}}
     </div>
-    {{/with}}
+    {{/each}}
 </footer>
