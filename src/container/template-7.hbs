@@ -1,0 +1,52 @@
+<header class="block_content">
+    {{> header}}
+
+    <div class="ad">
+        {{#with header}}
+        <div class="ad_block">
+            <div class="ad_title">Ad</div>
+            <span class="ad_text">{{ad.text}}:</span>
+            <span class="ad_text ad_url">{{ad.url}}</span>
+        </div>
+        <div class="useronline_block">
+            <div class="useronline">Users Online: {{userOnline}}</div>
+        </div>
+        {{/with}}
+    </div>
+</header>
+
+<div class="hero block_content">
+    {{#with hero}}
+    <h1 class="hero_title">{{title}}</h1>
+    <p class="hero_description">{{description}}</p>
+    {{#with button}}
+    <a href="{{url}}" class="hero_btn">{{text}}</a>
+    {{/with}}
+    {{/with}}
+</div>
+
+<div class="about block_content ">
+    {{#with about}}
+    <h2 class="about_heading">{{heading}}</h2>
+    <p class="about_info">{{info}}</p>
+    {{/with}}
+</div>
+
+<div class="articles block_content">
+    <div class="articles_header">
+        <div class="articles_title">our articles</div>
+        <button class="articles_btn">view all</button>
+    </div>
+    <div class="articles_content">
+        {{#each articles}}
+        <div class="acticles_card">
+            <img class="card_img card_margin" src="{{photo}}" alt="{{name}}">
+            {{#if isNew}}<span class="isnew">NEW</span>{{/if}}
+            <div class="card_name card_margin">{{name}}</div>
+            <p class="card_description card_margin">{{description}}</p>
+            <button class="card_btn card_margin">Read All</button>
+        </div>
+        {{/each}}
+    </div>
+</div>
+{{> footer}}
