@@ -1009,7 +1009,7 @@ router.get('/template-7', function (req, res) {
     page: {
       title: "Example Page"
     },
-
+    layout: 'template-7',
     header: {
       brandName: "Logo",
       userOnline: 10,

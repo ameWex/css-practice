@@ -5,7 +5,9 @@
 
     <nav class="header_nav">
         <div class="header_nav_right">
-            {{> nav list=header}}
+            {{#with header}}
+            {{> nav}}
+            {{/with}}
         </div>
     </nav>
 </header>
