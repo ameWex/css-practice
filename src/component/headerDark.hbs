@@ -1,0 +1,16 @@
+<header class="block_content">
+    {{> headerDark}}
+
+    <div class="ad">
+        {{#with header}}
+        <div class="ad_block">
+            <div class="ad_title">Ad</div>
+            <span class="ad_text">{{ad.text}}:</span>
+            <span class="ad_text ad_url">{{ad.url}}</span>
+        </div>
+        <div class="useronline_block">
+            <div class="useronline">Users Online: {{userOnline}}</div>
+        </div>
+        {{/with}}
+    </div>
+</header>
