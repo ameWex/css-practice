@@ -48,7 +48,14 @@
     border-bottom: 1px solid var(--color-border);
     align-items: center;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
 }
 
 .logo {
@@ -65,10 +72,6 @@
     border-radius: 10px;
     display: flex;
     justify-content: center;
-}
-
-.nav {
-    display: flex;
 }
 
 .nav_link {

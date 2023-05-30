@@ -1,8 +1,13 @@
 <header class="block_content">
-    {{> headerDark}}
+    <div class="header">
+        <div class="logo">Logo</div>
 
+        <nav class="header_nav">
+            {{#with header}}
+            {{> nav list=links isVertical=false}}
+        </nav>
+    </div>
     <div class="ad">
-        {{#with header}}
         <div class="ad_block">
             <div class="ad_title">Ad</div>
             <span class="ad_text">{{ad.text}}:</span>
