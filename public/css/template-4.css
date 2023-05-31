@@ -21,7 +21,7 @@
     background: var(--color-white);
     padding: 0 15px;
     font-family: '';
-
+    font-family: 'Montserrat';
     display: flex;
     justify-content: center;
 }
@@ -251,6 +251,7 @@
     padding: 12px;
     background: #FFFFFF;
     border-radius: 4.8px;
+    text-decoration: none;
 }
 
 .actions_button:hover {

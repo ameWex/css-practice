@@ -23,10 +23,8 @@
     background: var(--color-white);
     padding: 0 15px;
     font-family: 'Montserrat';
-
     display: flex;
     justify-content: center;
-
 }
 
 .page_content {

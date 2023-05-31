@@ -1,6 +1,13 @@
+:root {
+    --color-primary: rgb(46, 46, 194);
+}
+
+/* =============================================== */
+
 .page {
     background: #FFFFFF;
     padding: 0 15px;
+    font-family: 'Montserrat';
 }
 
 .page_content {
@@ -12,8 +19,21 @@
     padding: 24px;
 }
 
-.header_logo {
+.logo {
     font-size: 17px;
+    font-weight: 500;
+
+    background:var(--color-primary);
+    color: white;
+
+    height: 24px;
+    width: 24px;
+
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .divider {

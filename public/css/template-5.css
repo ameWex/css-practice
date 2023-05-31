@@ -22,8 +22,7 @@
 .page {
     background: var(--color-white);
     padding: 0 15px;
-    font-family: '';
-
+    font-family: 'Montserrat';
     display: flex;
     justify-content: center;
 
