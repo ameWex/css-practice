@@ -26,13 +26,40 @@
 
 <body>
     <div class="page page--dashboard">
-        <aside class="page__aside aside">
+        <aside class="page__aside aside vertial">
             <div class="aside__logo">
                 Sidebar
             </div>
-            <nav class="aside__nav">Test</nav>
+            <nav class="vertical mt-24 vertical--small">
+                <a href="#" class="nav-button nav-button--active click">
+                    <img src="/svg/nav/home.svg" alt="" class="icon nav-button__icon" />
+                    <span class="text text--white">Home</span>
+                </a>
+                <a href="#" class="nav-button click">
+                    <img src="/svg/nav/orders.svg" alt="" class="icon nav-button__icon" />
+                    <span class="text text--white">Orders</span>
+                </a>
+                <a href="#" class="nav-button click">
+                    <img src="/svg/nav/products.svg" alt="" class="icon nav-button__icon" />
+                    <span class="text text--white">Products</span>
+                </a>
+            </nav>
         </aside>
-        <header class="header">Test</header>
+        <header class="header">
+            <div class="layout header_content">
+                <div class="header__search">
+                    <input placeholder="Search" type="text" class="field field--header">
+                    <img src="/svg/header/search.svg" alt="Search" class="icon header__icon-search" />
+                    <span class="header__icon-settings icon--button icon--color-blue click"><img
+                            src="/svg/header/settings.svg" alt="Settings" class="icon" /></span>
+                </div>
+                <div class="icon-list">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </header>
         <main class="main">Test</main>
     </div>
 </body>
