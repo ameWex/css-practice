@@ -26,7 +26,7 @@
 
 <body>
     <div class="page page--dashboard">
-        <aside class="page__aside aside vertial">
+        <aside class="page__aside aside vertial vertical--big">
             <div class="aside__logo">
                 Sidebar
             </div>
@@ -44,29 +44,62 @@
                     <span class="text text--white">Products</span>
                 </a>
             </nav>
+            {{!-- <div class="field__block click">
+                <div class="field field-select">
+                    <span class="text text--white">Choose...</span>
+                </div>
+                <select class="field__select" name="country" id="1">
+                    <option value="USA">United States of America</option>
+                    <option value="UKR">Ukraine</option>
+                    <option value="CAN">Canada</option>
+                    <option value="FRA">France</option>
+                    <option value="ENG">United Kingdom</option>
+                    <option value="ESP">Spain</option>
+                </select>
+            </div> --}}
         </aside>
         <header class="header">
             <div class="layout header_content">
                 <div class="header__search">
-                    <input placeholder="Search" type="text" class="field field--header">
+                    <input placeholder="Search" type="text" class="text field field--header">
                     <img src="/svg/header/search.svg" alt="Search" class="icon header__icon-search" />
                     <span class="header__icon-settings icon--button icon--color-blue click"><img
                             src="/svg/header/settings.svg" alt="Settings" class="icon" /></span>
                 </div>
                 <div class="icon-list">
-                    <div class="header__icon-signal icon--button icon--color-yellow click">
+                    <div class="icon header__icon-signal icon--button icon--color-yellow click">
                         <img src="/svg/header/signal.svg" alt="Signal" class="icon" />
                     </div>
-                    <div class="header__icon-translate icon--button icon--color-blue-light click">
-                        <img src="/svg/header/translate.svg" alt="Translate" class="icon" />
+                    <div class="icon header__icon-translate icon--button icon--color-blue-light click">
+                        <img src="/svg/header/translate.svg" alt="Signal" class="icon" />
                     </div>
-                    <div class="header__icon-notifications icon--button icon--color-yellow click">
+                    <div class="icon header__icon-notifications icon--button icon--color-yellow click">
                         <img src="/svg/header/notifications.svg" alt="Notifications" class="icon" />
                     </div>
                 </div>
             </div>
         </header>
-        <main class="main">Test</main>
+        <main class="main">
+            <div class="layout">
+                <section class="box analytic__block ">
+                    <div class="analytic analytic--purple analytic--double card--vertical">
+                        <div class="icon icon--button analytic__icon icon--color-purple click">
+                            <img src="/svg/main/analytic/money.svg" alt="Money" class="icon" />
+                        </div>
+                        <div class="analytic__content vertical vertical--small">
+                            <div class="analytic__title text text--white">$500.00</div>
+                            <div class="analytic__info text text--gray-white">Total earning</div>
+                            <div class="icon analytic__arrow click">
+                                <img src="/svg/main/analytic/arrow.svg" alt="Arrow" class="icon" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="analytic analytic--blue analytic--double card--vertical">test</div>
+                    <div class="analytic analytic--blue card--horizontal">test</div>
+                    <div class="analytic card--horizontal">test</div>
+                </section>
+            </div>
+        </main>
     </div>
 </body>
 
