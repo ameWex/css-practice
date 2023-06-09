@@ -11,7 +11,9 @@ body {
   --color-white: #FFFFFF;
   --color-primary: #0d6efd;
   --color-black: #000000;
-  --color-gray: rgba(0,0,0,0.7);
+  --color-gray-black: rgba(0,0,0,0.7);
+  --color-gray-white: rgba(255, 255, 255, 0.7);
+
   --color-light: #ced4da;
 
   --color-background: #EFEFF4;
@@ -41,6 +43,7 @@ body {
 
   --border-radius-1: 4px;
   --border-radius-2: 8px;
+  --border-box: 16px;
 
   --transition: 0.7s;
 
@@ -56,10 +59,11 @@ body {
     background-color: var(--color-background);
     width: 100%;
     min-height: 100vh;
+    color: #212529;
   }
 
   .main {
-    padding: var(--spacing-9) 0;
+    padding: var(--spacing-9);
     display: grid;
     gap: var(--spacing-9);
   }
@@ -83,6 +87,10 @@ body {
 
   .icon {
     display: block;
+    display: flex;
+    align-items: center center;
+    align-self: center center;
+    align-content: center center;
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -103,10 +111,12 @@ body {
 
   .click:hover {
     opacity: var(--opacity-1);
+    cursor: pointer;
   }
 
   .click:active {
     opacity: var(--opacity-2);
+    cursor: pointer;
   }
 
   .header {
@@ -127,13 +137,29 @@ body {
     padding: var(--spacing-2);
   }
 
-  .icon_list {
+  .icon-list {
     margin-right: 170px;
     max-width: 134px;
     width: 100%;
     display: flex;
     flex-direction: row;
     gap: var(--spacing-4);
+  }
+
+  .box {
+    background-color: var(--color-white);
+    padding: var(--spacing-5);
+    border-radius: var(--border-box);
+  }
+
+  .analytic {
+    border-radius: var(--border-radius-2);
+    padding: var(--spacing-5);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
 
@@ -209,6 +235,55 @@ body {
     top: calc(50% - (32px /2));
     padding: 4px;
   }
+
+  .field__block {
+    position: relative;
+  }
+
+  .field__select {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .analytic__icon{
+    width: 44px;
+    height: 44px;
+    top: calc(50% - (28px /2));
+    right: var(--spacing-2);
+    padding: 8px;
+  }
+
+  .analytic__block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: var(--spacing-5);
+  }
+
+  .analytic__content {
+    position: relative;
+  }
+
+  .analytic__title {
+    font-size: 32px;
+  }
+
+  .analytic__info {
+    font-size: 12px;
+  }
+
+  .analytic__arrow {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left:calc( 100% + var(--spacing-1));
+  }
 }
 
 @layer mod {
@@ -226,8 +301,12 @@ body {
       color: var(--color-white);
     }
 
-    .text--gray {
-      color: var(--color-gray);
+    .text--gray-white {
+      color: var(--color-gray-white);
+    }
+
+    .text--gray-black {
+      color: var(--color-gray-black);
     }
 
     .text--bold {
@@ -243,6 +322,10 @@ body {
     .vertical--small {
       gap: var(--spacing-2);
     }
+
+    /* .vertical--big {
+      gap: var(--spacing-5);
+    } */
 
     .nav-button--active {
       background-color: var(--color-primary);
@@ -284,8 +367,55 @@ body {
     .icon--color-blue-light {
       background-color: #E1F3FC ;
     }
+
+    .icon--color-purple {
+      background-color: var(--color-purple-dark);
+    }
+
+    .field--select {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .card--vertical {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card--horizontal {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 12px;
+    }
+
+    .analytic--double {
+      grid-row: 1/3;
+    }
+
+    .analytic--purple {
+      background-color: var(--color-purple-light);
+    }
+
+    .analytic--blue {
+      background-color: var(--color-blue-light);
+    }
 }
 
 @layer adaptive {
+  @media all and (width <= 1000px) {
+    .page--dashboard {
+      grid-template-columns: 1fr;
+    }
+    
+    .aside {
+      display: none;
+    }
 
+    .header {
+      display: none;
+    }
+  }
 }
