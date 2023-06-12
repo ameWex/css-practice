@@ -568,9 +568,13 @@ body {
   }
 
   @media all and (width < 650px) {
-    .analytic__block {
-      display: grid;
+      .analytic__block {
       grid-template-columns: 1fr;
+      max-height: 635px;
+    }
+
+    .analytic--double{
+      grid-row: auto;
     }
   }
 }
