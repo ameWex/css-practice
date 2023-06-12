@@ -44,19 +44,6 @@
                     <span class="text text--white">Products</span>
                 </a>
             </nav>
-            {{!-- <div class="field__block click">
-                <div class="field field-select">
-                    <span class="text text--white">Choose...</span>
-                </div>
-                <select class="field__select" name="country" id="1">
-                    <option value="USA">United States of America</option>
-                    <option value="UKR">Ukraine</option>
-                    <option value="CAN">Canada</option>
-                    <option value="FRA">France</option>
-                    <option value="ENG">United Kingdom</option>
-                    <option value="ESP">Spain</option>
-                </select>
-            </div> --}}
         </aside>
         <header class="header">
             <div class="layout header_content">
@@ -80,8 +67,8 @@
             </div>
         </header>
         <main class="main">
-            <div class="layout">
-                <section class="box analytic__block ">
+            <div class="layout mhg">
+                <section class="box analytic__block">
                     <div class="analytic analytic--purple analytic--double card--vertical">
                         <div class="icon icon--button analytic__icon icon--color-purple click">
                             <img src="/svg/main/analytic/money.svg" alt="Money" class="icon" />
@@ -94,9 +81,196 @@
                             </div>
                         </div>
                     </div>
-                    <div class="analytic analytic--blue analytic--double card--vertical">test</div>
-                    <div class="analytic analytic--blue card--horizontal">test</div>
-                    <div class="analytic card--horizontal">test</div>
+                    <div class="analytic analytic--blue analytic--double card--vertical">
+                        <div class="icon icon--button icon--color-blue click">
+                            <img src="/svg/main/analytic/order.svg" alt="Order" class="icon analytic__icon" />
+                        </div>
+                        <div class="analytic__content vertical vertical--small">
+                            <div class="analytic__title text text--white">$961</div>
+                            <div class="analytic__info text text--gray-white">Total Order</div>
+                        </div>
+                    </div>
+                    <div class="analytic analytic--blue card--horizontal">
+                        <div class="icon icon--button icon--color-blue click">
+                            <img src="/svg/main/analytic/money.svg" alt="Money" class="icon analytic__icon" />
+                        </div>
+                        <div class="analytic__content vertical vertical--small">
+                            <div class="analytic__title-sm text text--white">$203k</div>
+                            <div class="analytic__info text text--gray-white">Total Income</div>
+                        </div>
+                    </div>
+                    <div class="analytic analytic--white card--horizontal">
+                        <div class="icon icon--button icon--color-yellow click">
+                            <img src="/svg/main/analytic/shop.svg" alt="Shop" class="icon analytic__icon" />
+                        </div>
+                        <div class="analytic__content vertical vertical--small">
+                            <div class="analytic__title-sm text">$203k</div>
+                            <div class="analytic__info text text--gray-black">Total Income</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__checkout">
+                    <div class="purchase__block box">
+                        <div class="purchase__title text">Purchase list</div>
+                        <hr class="divider">
+                        <div class="purchase">
+                            <div class="purchase__list_item">
+                                <div class="purchase__up">
+                                    ID437661
+                                </div>
+                                <div class="purchase__down">
+                                    May 11, 2023, 14:21
+                                </div>
+                            </div>
+                            <div class="purchase__list_item">
+                                <div class="purchase__up">
+                                    AirOn ProCam
+                                </div>
+                                <div class="purchase__down">
+                                    7/8 USB Type-C
+                                </div>
+                            </div>
+                            <div class="purchase__list_item">
+                                <div class="purchase__up">
+                                    132.32 EUR
+                                </div>
+                                <div class="purchase__down color--warning">
+                                    Not paid
+                                </div>
+                            </div>
+                            <div class="purchase__list_item">
+                                <div class="purchase__up">
+                                    Customer
+                                </div>
+                                <div class="purchase__down">
+                                    robin@com.de
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="divider">
+                        <div class="purchase">
+                            <div class="purchase__list_item">
+                                <div class="purchase__up">
+                                    ID437661
+                                </div>
+                                <div class="purchase__down">
+                                    May 11, 2023, 14:21
+                                </div>
+                            </div>
+                            <div class="purchase__list_item">
+                                <div class="purchase__up">
+                                    PHILIPS Essential
+                                </div>
+                                <div class="purchase__down">
+                                    HD9200/90
+                                </div>
+                            </div>
+                            <div class="purchase__list_item">
+                                <div class="purchase__up">
+                                    543 USD
+                                </div>
+                                <div class="purchase__down color--success">
+                                    Pay by Stripe
+                                </div>
+                            </div>
+                            <div class="purchase__list_item">
+                                <div class="purchase__up">
+                                    Customer
+                                </div>
+                                <div class="purchase__down">
+                                    dima@com.ua
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="payment__block box">
+                        <div class="purchase__title text">Payment</div>
+                        <hr class="divider">
+                        <div class="payment__radio">
+
+                            <div class="radio__item">
+                                <input class='radio__input' type='radio' name='radio' id='debit' value='debit' />
+                                <div class='radio__circle'></div>
+                                <label for='debit' class='text radio__label'>Credit card</label>
+                            </div>
+
+                            <div class="radio__item">
+                                <input class='radio__input' type='radio' name='radio' id='debit' value='debit' />
+                                <div class='radio__circle'></div>
+                                <label for='debit' class='text radio__label'>Debit card</label>
+                            </div>
+
+                            <div class="radio__item">
+                                <input class='radio__input' type='radio' name='radio' id='debit' value='debit' />
+                                <div class='radio__circle'></div>
+                                <label for='debit' class='text radio__label'>PayPal</label>
+                            </div>
+                        </div>
+                        <div class="payment__input">
+                            <div class="payment__input-item">
+                                <label for="payment__input-label">Name on card</label>
+                                <input class="field" type="text">
+                            </div>
+                            <div class="payment__input-item">
+                                <label for="payment__input-label">Credit card number</label>
+                                <input class="field" type="text">
+                            </div>
+                            <div class="payment__input-item">
+                                <label for="payment__input-label">Expiration</label>
+                                <input class="field" type="text">
+                            </div>
+                            <div class="payment__input-item">
+                                <label for="payment__input-label">CVV</label>
+                                <input class="field" type="text">
+                            </div>
+                        </div>
+                        <hr class="divider">
+                        <div class="payment__select">
+                            <div class="field__block">
+                                <label for="1">Country</label>
+                                <div class="click">
+                                    <div class="field field-select">
+                                        <span class="text text--black">Choose...</span>
+                                    </div>
+                                    <select class="field__select" name="country" id="1">
+                                        <option value="USA">United States of America</option>
+                                        <option value="UKR">Ukraine</option>
+                                        <option value="CAN">Canada</option>
+                                        <option value="FRA">France</option>
+                                        <option value="ENG">United Kingdom</option>
+                                        <option value="ESP">Spain</option>
+                                    </select>
+                                    <div class="select__icon">
+                                        <img src="/svg/main/select.svg" alt="Select">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field__block">
+                                <label for="2">State</label>
+                                <div class="click">
+                                    <div class="field field-select">
+                                        <span class="text text--black">Choose...</span>
+                                    </div>
+                                    <select class="field__select" name="state" id="2">
+                                        <option value="USA">Ivano Frankivsk</option>
+                                        <option value="UKR">Zhytomyr</option>
+                                        <option value="CAN">Kyiv</option>
+                                        <option value="FRA">Khmelnytskyi</option>
+                                        <option value="ENG">Dnipro</option>
+                                        <option value="ESP">Odesa</option>
+                                    </select>
+                                    <div class="select__icon">
+                                        <img src="/svg/main/select.svg" alt="Select">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="divider">
+                        <button class="payment__btn click text--white">Continue to checkout</button>
+                    </div>
                 </section>
             </div>
         </main>
