@@ -576,5 +576,9 @@ body {
     .analytic--double{
       grid-row: auto;
     }
+
+    .page {
+       min-height: 235vh;
+    }
   }
 }
