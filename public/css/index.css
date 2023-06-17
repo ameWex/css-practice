@@ -1,88 +1,48 @@
-.lesson-four-task-one .btn:hover {
-    color: red;
+.page {
+    display: grid;
+    padding: 40px;
+    justify-content: center;
 }
 
-.lesson-four-task-two .link:hover ~ h1 {
-    background: green;
+.title__container {
+    display: grid;
+    justify-content: center;
 }
 
-.link:visited {
-  color: green;
+.container {
+    margin-top: 20px;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 24px;
 }
 
-#sidebar .link:link {
-  color: red;
+.nav__title {
+    font-size: 40px;
+    color: #212121;
+    justify-content: center;
 }
 
-.lesson-four-task-five .btn:active {
-    background: blue;
+.nav_item {
+    border: 1px solid #205fa6;
+    border-radius: 4px;
+    padding: 8px;
 }
 
-.lesson-four-task-six .btn:focus {
-    background: orange;
-    color: orange;
+.nav_item:hover {
+    transition: opacity 0.7s;
+    opacity: 0.7;
 }
 
-.lesson-four-task-seven #target:target {
-    color: green;
-    background: green;
+.nav_item:active {
+    transition: opacity 0.7s;
+    opacity: 0.3;
 }
 
-.lesson-four-task-eight #checkbox:checked ~ div {
-    color: white;
-    background: blue;
-}
-
-.lesson-four-task-nine p:lang(uk) {
-    color: blue;
-}
-
-.lesson-four-task-ten form input:enabled {
-    color: red;
-    background: yellow;
-}
-
-.lesson-four-task-eleven input:disabled {
-    background: yellow;
-}
-
-.lesson-four-task-twelve input:read-write {
-    background: yellow;
-}
-
-.lesson-four-task-thirteen input:read-only {
-    background: yellow;
-}
-
-.lesson-four-task-fourteen input:valid {
-    background: green;
-}
-
-.lesson-four-task-fourteen input:invalid {
-    background: red;
-}
-
-.lesson-four-task-fifteen textarea:optional {
-    background: red;
-}
-
-.lesson-four-task-sixteen input:out-of-range {
-    color: red;
-}
-
-.lesson-four-task-seventeen input:in-range {
-    color: red;
-}
-
-.lesson-four-task-eighteen input:placeholder-shown{
-    background: red;
-}
-
-.lesson-four-task-nineteen button:focus-within {
-    color: white;
-    background: yellow;
-}
-
-.lesson-four-task-twenty input:invalid {
-    background: red ;
+.nav_link {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
 }
